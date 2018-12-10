@@ -621,7 +621,7 @@ bool WiFiSTAClass::_smartConfigStarted = false;
 bool WiFiSTAClass::_smartConfigDone = false;
 
 
-bool WiFiSTAClass::beginSmartConfig() {
+bool WiFiSTAClass::beginSmartConfig(byte hmac_key[32]) {
     if (_smartConfigStarted) {
         return false;
     }
