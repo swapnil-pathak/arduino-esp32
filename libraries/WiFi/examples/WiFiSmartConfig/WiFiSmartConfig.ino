@@ -35,8 +35,8 @@ void setup() {
   }
   */
 
-  WiFi.beginSmartConfig(hmacResult);      //Enter param (byte hmacResult[32])
-
+  //WiFi.beginSmartConfig(hmacResult);      //Enter param (byte hmacResult[32])
+  WiFi.beginSmartConfig();
 // --------------------------------------------------------------------
 
   //Wait for SmartConfig packet from mobile

@@ -87,7 +87,8 @@ protected:
     static bool _autoReconnect;
 
 public: 
-    bool beginSmartConfig(byte hmac_key[32]);        //Include param (byte hmacResult[32])
+    //bool beginSmartConfig(byte hmac_key[32]);        //Include param (byte hmacResult[32])
+    bool beginSmartConfig();
     bool stopSmartConfig();
     bool smartConfigDone();
 
@@ -95,6 +96,8 @@ protected:
     static bool _smartConfigStarted;
     static bool _smartConfigDone;
     static void _smartConfigCallback(uint32_t status, void* result);
+
+    //static bool _checkHmacResult();
 
 };
 
